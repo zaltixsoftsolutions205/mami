@@ -1,0 +1,171 @@
+/* stylelint-disable-next-line at-rule-no-unknown */
+/* stylelint-disable-next-line at-rule-no-unknown */
+/* stylelint-disable-next-line at-rule-no-unknown */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 20%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 20%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 20%;
+
+    --primary: 203 89% 53%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 48 96% 53%;
+    --secondary-foreground: 0 0% 20%;
+
+    --muted: 0 0% 93%;
+    --muted-foreground: 0 0% 50%;
+
+    --accent: 203 89% 53%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 0 0% 90%;
+    --input: 0 0% 95%;
+    --ring: 203 89% 53%;
+
+    --radius: 0.75rem;
+    
+    --medical-blue: 203 89% 53%;
+    --medical-blue-light: 203 89% 73%;
+    --medical-blue-dark: 203 89% 43%;
+    --soft-gray: 0 0% 99%;
+    
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --shadow-soft: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    --shadow-md: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 210 24% 10%;
+    --foreground: 210 40% 98%;
+
+    --card: 210 24% 12%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 210 24% 10%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 197 90% 48%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 197 71% 73%;
+    --accent-foreground: 210 24% 16%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 197 90% 48%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    /* stylelint-disable-next-line */
+    @apply border-border;
+  }
+
+  body {
+    /* stylelint-disable-next-line */
+    @apply bg-background text-foreground;
+    font-family: 'Poppins', 'Segoe UI', system-ui, -apple-system, sans-serif;
+  }
+
+  /* Typography Styles */
+  h1 {
+    /* stylelint-disable-next-line */
+    @apply text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight;
+  }
+
+  h2 {
+    /* stylelint-disable-next-line */
+    @apply text-4xl md:text-5xl font-bold tracking-tight;
+  }
+
+  h3 {
+    /* stylelint-disable-next-line */
+    @apply text-2xl md:text-3xl font-semibold tracking-tight;
+  }
+
+  h4 {
+    /* stylelint-disable-next-line */
+    @apply text-xl md:text-2xl font-semibold;
+  }
+
+  h5 {
+    /* stylelint-disable-next-line */
+    @apply text-lg font-semibold;
+  }
+
+  h6 {
+    /* stylelint-disable-next-line */
+    @apply text-base font-semibold;
+  }
+
+  p {
+    /* stylelint-disable-next-line */
+    @apply text-base md:text-lg leading-relaxed;
+  }
+
+  a {
+    /* stylelint-disable-next-line */
+    @apply text-base md:text-lg;
+  }
+
+  button {
+    /* stylelint-disable-next-line */
+    @apply text-base md:text-lg;
+  }
+
+  label {
+    /* stylelint-disable-next-line */
+    @apply text-base font-semibold;
+  }
+}
