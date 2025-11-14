@@ -127,7 +127,7 @@ const AboutMe = () => {
             I am a committed physiotherapist with more than ten years of international experience in rehabilitation, patient care, and healthcare operations. My mission is to support individuals in recovery, manage pain effectively, and empower them to resume active lifestyles.
           </p>
           <p className="text-lg italic text-primary max-w-2xl mx-auto mt-4 font-semibold animate-fade-in-up animation-delay-600">
-            "A scientific mind, a compassionate heart, and artistic hands."
+            "A physiotherapist has the brain of scientist the heart of a humanist and the hands of an Artist.."
           </p>
           <div className="w-24 h-1 bg-primary rounded-full mx-auto mt-8 animate-scale-x animation-delay-800"></div>
         </div>
