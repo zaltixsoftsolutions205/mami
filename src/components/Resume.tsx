@@ -24,7 +24,7 @@ const AboutMe = () => {
     {
       title: "Global Credentials",
       description:
-        "I possess current registrations with the Health and Care Professions Council (UK) and the Dubai Health Authority, which enables me to practice on an international level.My Master of Science in Global Healthcare Management from Coventry University has enhanced my knowledge in healthcare administration, clinical governance, and collaborative teamwork.",
+        "I possess current registrations with the Health and Care Professions Council (UK) and the Dubai Health Authority, which enables me to practice on an international level.My Master of Science from Coventry University has enhanced my knowledge in healthcare administration, clinical governance, and collaborative teamwork.",
     },
   ];
 
