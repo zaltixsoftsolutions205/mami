@@ -11,10 +11,9 @@ const Header = () => {
     { label: "Home", href: "/" },
     { label: "About", href: "/#about" },
     { label: "Services", href: "/#services" },
-    { label: "Video Call", href: "/#video-consultation" },
+    { label: "Video Consultation", href: "/#video-consultation" },
     { label: "Testimonials", href: "/#testimonials" },
     { label: "Awards", href: "/#awards" },
-    { label: "Contact", href: "/#contact" },
   ];
 
   const scrollToSection = (sectionId: string) => {
@@ -28,7 +27,7 @@ const Header = () => {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-white shadow-md border-b-4 border-primary">
       {/* Reduced vertical padding to move header up */}
-      <div className="container mx-auto px-4 py-2">
+      <div className="container mx-auto px-4 py-1">
         <div className="flex items-center justify-between">
           <Link to="/" className="flex items-center gap-2 hover:opacity-80 transition-opacity">
             {/* logo size unchanged */}

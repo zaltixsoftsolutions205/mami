@@ -115,7 +115,7 @@ All colors MUST be HSL.
   body {
     /* stylelint-disable-next-line */
     @apply bg-background text-foreground;
-    font-family: 'Poppins', 'Segoe UI', system-ui, -apple-system, sans-serif;
+    font-family: 'Stack', 'Segoe UI', system-ui, -apple-system, sans-serif;
   }
 
   /* Typography Styles */
