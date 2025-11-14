@@ -18,11 +18,11 @@ const Hero = () => {
       },
       { threshold: 0.1 }
     );
-    
+
     if (sectionRef.current) {
       observer.observe(sectionRef.current);
     }
-    
+
     return () => {
       observer.disconnect();
     };
@@ -92,7 +92,7 @@ const Hero = () => {
       <section
         id="home"
         ref={sectionRef}
-        className="relative min-h-screen flex items-center pt-20 overflow-hidden bg-white"
+        className="relative min-h-screen flex items-center pt-24 overflow-hidden bg-white"
       >
         {/* Background Gradient and Image */}
         <div
@@ -108,29 +108,29 @@ const Hero = () => {
 
         {/* Animated floating elements */}
         <div className="absolute inset-0 z-5 overflow-hidden">
-          <div 
+          <div
             className={`absolute top-1/4 left-10 w-6 h-6 bg-green-200 rounded-full opacity-60 transition-all duration-1000 ease-out ${
-              isVisible ? 'opacity-60 animate-float-slow' : 'opacity-0'
-            }`} 
-            style={{ transitionDelay: '500ms' }}
+              isVisible ? "opacity-60 animate-float-slow" : "opacity-0"
+            }`}
+            style={{ transitionDelay: "500ms" }}
           ></div>
-          <div 
+          <div
             className={`absolute top-1/3 right-20 w-8 h-8 bg-green-100 rounded-full opacity-40 transition-all duration-1000 ease-out ${
-              isVisible ? 'opacity-40 animate-float' : 'opacity-0'
-            }`} 
-            style={{ transitionDelay: '700ms' }}
+              isVisible ? "opacity-40 animate-float" : "opacity-0"
+            }`}
+            style={{ transitionDelay: "700ms" }}
           ></div>
-          <div 
+          <div
             className={`absolute bottom-1/4 left-20 w-4 h-4 bg-green-300 rounded-full opacity-50 transition-all duration-1000 ease-out ${
-              isVisible ? 'opacity-50 animate-float-slower' : 'opacity-0'
-            }`} 
-            style={{ transitionDelay: '900ms' }}
+              isVisible ? "opacity-50 animate-float-slower" : "opacity-0"
+            }`}
+            style={{ transitionDelay: "900ms" }}
           ></div>
-          <div 
+          <div
             className={`absolute top-1/2 right-10 w-10 h-10 bg-green-50 rounded-full opacity-30 transition-all duration-1000 ease-out ${
-              isVisible ? 'opacity-30 animate-float-slow' : 'opacity-0'
-            }`} 
-            style={{ transitionDelay: '1100ms' }}
+              isVisible ? "opacity-30 animate-float-slow" : "opacity-0"
+            }`}
+            style={{ transitionDelay: "1100ms" }}
           ></div>
         </div>
 
@@ -139,9 +139,9 @@ const Hero = () => {
             {/* Left Content - Text */}
             <div className="lg:w-1/2 max-w-2xl">
               {/* Badge */}
-              <div 
+              <div
                 className={`inline-flex items-center gap-2 px-4 py-2 bg-green-100 rounded-full mb-6 transform transition-all duration-700 ease-out ${
-                  isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+                  isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
                 }`}
               >
                 <Shield className="w-4 h-4 text-green-600" />
@@ -156,9 +156,7 @@ const Hero = () => {
                   <h1
                     key={index}
                     className={`text-5xl md:text-6xl lg:text-7xl font-bold text-foreground leading-tight transform transition-all duration-700 ease-out ${
-                      isVisible 
-                        ? 'opacity-100 translate-y-0' 
-                        : 'opacity-0 translate-y-10'
+                      isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
                     }`}
                     style={{ transitionDelay: `${index * 200 + 300}ms` }}
                   >
@@ -168,11 +166,11 @@ const Hero = () => {
               </div>
 
               {/* Subtext */}
-              <p 
+              <p
                 className={`text-lg text-gray-600 mb-8 leading-relaxed transform transition-all duration-700 ease-out ${
-                  isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
-                }`} 
-                style={{ transitionDelay: '900ms' }}
+                  isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+                }`}
+                style={{ transitionDelay: "900ms" }}
               >
                 Personalized physiotherapy designed to help you recover, 
                 strengthen, and move freely. Experience expert care and 
@@ -181,11 +179,11 @@ const Hero = () => {
               </p>
 
               {/* CTA Button */}
-              <div 
+              <div
                 className={`flex flex-col sm:flex-row gap-4 mb-8 transform transition-all duration-700 ease-out ${
-                  isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
-                }`} 
-                style={{ transitionDelay: '1100ms' }}
+                  isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+                }`}
+                style={{ transitionDelay: "1100ms" }}
               >
                 <Button
                   size="lg"
@@ -198,11 +196,11 @@ const Hero = () => {
               </div>
 
               {/* Trust Indicators */}
-              <div 
+              <div
                 className={`flex items-center gap-6 mb-8 transform transition-all duration-700 ease-out ${
-                  isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
-                }`} 
-                style={{ transitionDelay: '1300ms' }}
+                  isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+                }`}
+                style={{ transitionDelay: "1300ms" }}
               >
                 <div className="flex items-center gap-2">
                   <div className="flex">
@@ -219,11 +217,11 @@ const Hero = () => {
               </div>
 
               {/* Highlight Points */}
-              <div 
+              <div
                 className={`flex flex-col sm:flex-row gap-6 transform transition-all duration-700 ease-out ${
-                  isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
-                }`} 
-                style={{ transitionDelay: '1500ms' }}
+                  isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+                }`}
+                style={{ transitionDelay: "1500ms" }}
               >
                 <div className="border-l-4 border-green-600 pl-4 group hover:border-green-700 transition-all duration-300 hover:translate-x-1">
                   <p className="text-sm font-semibold text-foreground group-hover:text-green-700 transition-colors duration-300">
@@ -364,11 +362,11 @@ const Hero = () => {
         </div>
 
         {/* Scroll indicator */}
-        <div 
+        <div
           className={`absolute bottom-8 left-1/2 transform -translate-x-1/2 transition-all duration-1000 ease-out ${
-            isVisible ? 'opacity-100' : 'opacity-0'
-          }`} 
-          style={{ transitionDelay: '2000ms' }}
+            isVisible ? "opacity-100" : "opacity-0"
+          }`}
+          style={{ transitionDelay: "2000ms" }}
         >
           <div className="animate-bounce">
             <div className="w-6 h-10 border-2 border-green-600 rounded-full flex justify-center">

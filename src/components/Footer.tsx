@@ -1,22 +1,22 @@
 import { Facebook, Twitter, Instagram, Linkedin, Youtube } from "lucide-react";
-import Logo from "../assets/logo.jpg"; // Adjust the path based on your file structure
+import Logo from "../assets/logo.png"; // Adjust the path based on your file structure
 
 const Footer = () => {
   return (
     <footer className="bg-primary text-primary-foreground py-8">
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
-          
+
           {/* Logo Section */}
           <div className="flex items-center gap-2">
-            <img src={Logo} alt="MTN Logo" className="w-10 h-10 object-contain" />
+            <img src={Logo} alt="MTN Logo" className="w-20 h-20 object-contain" />
             <span className="text-xl font-bold">Mami Physiocare</span>
           </div>
 
           {/* Contact Section */}
           <div className="text-center md:text-left">
             <p className="opacity-90">
-               drramyakrishna.expert@gmail.com
+              <a href="mailto:drramyakrishna.expert@gmail.com">drramyakrishna.expert@gmail.com</a>
             </p>
           </div>
 
